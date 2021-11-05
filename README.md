@@ -12,13 +12,13 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
-- [ ] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
+- [x] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [x] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
+- [x] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
 - [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`. MAKE SURE TO PUSH TO MAIN, YOU NO LONGER NEED TO CREATE A NEW BRANCH!!
-- [ ] Make commits often! PUSH TO MAIN!!!
-- [ ] You can run tests locally by running npm run test.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [x] Make commits often! PUSH TO MAIN!!!
+- [x] You can run tests locally by running npm run test.
+- [x] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -79,6 +79,13 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+  React JS is a user interface component library. It makes everything simple, it handles dynamic data for a faster response time, it is a library whose purpose is to be scalable, reusable and fast/simple to write.
+
 1. Describe component state.
+Component State is a JS object used by React to represent information about the component's current state.When state changes, the component responds by re-rendering.
+
 1. Describe props.
+Props are used when we want to pass information held on state inside one component to another.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+  Side effects are anything that affects something outside the scope of the function being executed.
