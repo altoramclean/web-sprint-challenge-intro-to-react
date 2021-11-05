@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CharacterStyled = styled.div `
-    border: 3px solid #FFA500;
+    border: 4px solid #FFA500;
     background-color: ##D2B48C;
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@ const CharacterStyled = styled.div `
     width: 70%;
     
     &:hover {
-        background: #000000;
+        background: #FFF8DC;
         color: #808080 ;
     }
 `
@@ -25,7 +25,7 @@ const Header = styled.h2`
 
 const HeaderTwo = styled.h3`
     font-family: 'sans-serif';
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 `
 
 const ButtonStyling = styled.button`
