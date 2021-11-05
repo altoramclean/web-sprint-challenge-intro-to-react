@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
-import './App.css';
 import axios from 'axios';
+import Character from './components/Character';
+import './App.css';
 
 
 const App = () => {
@@ -13,22 +14,27 @@ const App = () => {
 
   const [charactersInfo, setCharactersInfo] = useState([]);
 
-    useEffect(() => {
-      axios.get(`https://swapi.dev/api/people`)
-      .then(res => {
-        setCharactersInfo(res.data);
-      })
-      .catch(err => {
-        console.error(err);
-      })
-    }, [])
+  useEffect(() => {
+    axios.get("https://swapi.dev/api/people")
+     .then(res => {
+       setCharactersInfo(res.data);
+
+     }).catch(err =>  {
+       console.error(err);
+     })
+  }, [])
 
   return (
     <div className="App">
       <h1 className="Header">Star Wars Characters</h1>
-      
+      {
+        charactersInfo.map(character => {
+          return <Character key = {character.id} info = {character} />
+        })
+      }
     </div>
   );
 }
+
 
 export default App;
